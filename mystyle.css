@@ -4,7 +4,7 @@ comment
 
 h1{
     font-family: 'TH SarabunPSK',Arial, Helvetica, sans-serif;
-    font-size: 16cm;
+    font-size: 2cm;
     color: aqua;
 }
 
@@ -20,6 +20,9 @@ h1{
     color: rgb(162, 162, 81);
 }
 
+.box p{
+    margin-top: 45%;
+}
 .box{
     width: 400px;
     height: 400px;
