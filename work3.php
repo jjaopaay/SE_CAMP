@@ -2,6 +2,8 @@
      
 
 <head >
+<body style='background-color:pink'>
+
     <meta charset="utf-8">
     <style>
         div {
