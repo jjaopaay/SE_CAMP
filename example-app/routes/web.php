@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome'); //welcome.blade.php
+    return view('myfolder.welcome'); //welcome.blade.php
 });
 
 Route::get('/my-route' , function (){
