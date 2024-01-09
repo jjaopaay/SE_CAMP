@@ -8,7 +8,7 @@
     <tbody>
         <body>
             <center>
-                <h1>My Folder and My Page</h1>
+                <h1>สูตรคูณ</h1>
                 <h1>
                     <form method="post" action="/my-route">
                     @csrf
