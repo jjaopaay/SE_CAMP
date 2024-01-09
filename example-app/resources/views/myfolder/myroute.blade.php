@@ -30,7 +30,6 @@ font-size: 50px;
 font-family: Sriracha;
 }
 body{
-/* background-image: url("https://i.pinimg.com/originals/8c/62/93/8c6293f2ccb3b36222301e5da06f6f60.gif"); */ background-image: background-size: cover;
 }
 div {
 font-size: 25px;
@@ -46,7 +45,7 @@ div:hover {
 width: 240px;
 height: 400px;
 background-color:
-rgb(201, 119, 255);
+rgb(100, 119, 255);
 box-shadow: 10px 5px black;
 }
 </style>
