@@ -2,7 +2,7 @@
 use App\Http\Controllers\MyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Htpp\Controllers\C_titles;
+use App\Http\Controllers\C_titles;
 
 /*
 |--------------------------------------------------------------------------

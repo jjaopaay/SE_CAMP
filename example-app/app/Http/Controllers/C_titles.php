@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\M_titles;
 use Illuminate\Http\Request;
 
 class C_titles extends Controller
@@ -11,7 +12,9 @@ class C_titles extends Controller
      */
     public function index()
     {
-        echo "test";
+
+        $data['titles']= M_titles::all();
+        return view('titles.index' , $data);
         //
     }
 
