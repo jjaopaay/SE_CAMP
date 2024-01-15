@@ -8,20 +8,17 @@ class MyController extends Controller
 {
     private $myvar = "Hello World!";
 
-    function __construck()
+    function __construct() //MyController
     {
 
     }
-    function index (){
-        $data = ['val_a' => 'Hello World!'];
-        $data['val_b'] = "Laravel";
 
-    return view('myfolder.mypage',$data);    }
-    //
+    public function index(){
+        return view('home');
+    }
 
     public function store(Request $req){
-        $data['myinput'] =  $req -> input('myinput');
+        $data['myinput'] = $req->input('myinput');
         return view('myfolder.myroute', $data);
     }
 }
-
