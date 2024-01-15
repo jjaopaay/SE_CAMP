@@ -9,7 +9,7 @@ class M_titles extends Model
 {
     use HasFactory;
 
-    protected $table='title';
+    protected $table='titles';
     protected $primarykey='tit_id';
     public $incrementing=true;
     public $timestamp=false;
