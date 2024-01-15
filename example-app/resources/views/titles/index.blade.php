@@ -36,11 +36,11 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">คำนำหน้าชื่อ</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        placeholder="Enter email">
+                                    <input type="text" name = "tit_name" class="form-control" id="exampleInputEmail1"
+                                        placeholder="เช่น นาย นาง นางสาว">
                                 </div>
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" id="exampleCheck1">
+                                    <input type="checkbox" name = "tit_is_active" checked class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">ใช้งาน</label>
                                 </div>
                             </div>
@@ -74,46 +74,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1.</td>
-                                        <td>Update software</td>
-                                        <td>
-                                            <div class="progress progress-xs">
-                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge bg-danger">55%</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2.</td>
-                                        <td>Clean database</td>
-                                        <td>
-                                            <div class="progress progress-xs">
-                                                <div class="progress-bar bg-warning" style="width: 70%"></div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge bg-warning">70%</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3.</td>
-                                        <td>Cron job running</td>
-                                        <td>
-                                            <div class="progress progress-xs progress-striped active">
-                                                <div class="progress-bar bg-primary" style="width: 30%"></div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge bg-primary">30%</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4.</td>
-                                        <td>Fix and squish bugs</td>
-                                        <td>
-                                            <div class="progress progress-xs progress-striped active">
-                                                <div class="progress-bar bg-success" style="width: 90%"></div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge bg-success">90%</span></td>
-                                    </tr>
+                                    <?php foreach($titles as $index =>$titles) {?>
+
+
+                                   <?php } ?>
                                 </tbody>
                             </table>
                         </div>

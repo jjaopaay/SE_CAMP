@@ -31,6 +31,19 @@ class C_titles extends Controller
      */
     public function store(Request $request)
     {
+        $tit_name = $request -> input('tit_name');
+        $tit_is_active = $request -> input('tit_is_active');
+        if($tit_is_active =="on "){
+            $tit_is_active = 1;
+        }else{
+            $tit_is_active = 0;
+        }
+        $m_titles = new M_titles;
+        $m_titles ->  tit_name =$tit_name;
+        $m_titles -> tit_is_active= $tit_is_active;
+        $m_titles -> save();
+
+        return Redirect::to('/titles');
         //
     }
 
