@@ -3,6 +3,7 @@ use App\Http\Controllers\MyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\C_titles;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +25,7 @@ Route::namespace('App\Htpp\Controllers')->group(function(){
 });
 
 Route::resource('/my-controller4','MyController');
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Route::get('/my-route',function(){
     $data=['val_a' => 'Hello World!'];
     $data['val_b'] = " Laravel";
@@ -36,3 +35,10 @@ Route::post('/my-route',function(Request $req){
     $data['number'] = $req->input('number');
     return view('myroute',$data);
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/form', [FormController::class,'index'] );
