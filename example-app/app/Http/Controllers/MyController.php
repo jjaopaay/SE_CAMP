@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 class MyController extends Controller
 {
     private $myvar = "Hello World!";
@@ -19,6 +18,6 @@ class MyController extends Controller
 
     public function store(Request $req){
         $data['myinput'] = $req->input('myinput');
-        return view('myfolder.myroute', $data);
+        return view('myroute', $data);
     }
 }
