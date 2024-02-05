@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Starter</title>
+    <title>SE CAMP | @yield('title', '#12')</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -240,6 +236,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
+                        <a href="logout" class="btn btn-lg" style="background-color: rgb(179, 23, 23)" >
+                            <span class="glyphicon glyphicon-log-out" style="color: white"> Log out </span>
+                        </a>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -249,7 +248,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            @yield('content','error')
+            @yield('content')
         </div>
         <!-- /.content-wrapper -->
 
