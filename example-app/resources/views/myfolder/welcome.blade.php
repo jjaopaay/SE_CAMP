@@ -1,3 +1,4 @@
+{{--
 <!doctype html>
 <html>
 
@@ -107,3 +108,41 @@
 </body>
 
 </html>
+--}}
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Multiplication Table</title>
+</head>
+
+<body bgcolor="#F7F0CF">
+
+    <h1 >ตารางแม่สูตรคูณ</h1>
+    <input type="text" id="my_number" value="0">
+    <button onclick="myFunction()"  class="btn btn-outline-success">submit ✅</button>
+    <br>
+    <h1 id="number"></h1>
+    <h1 id="result"></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{text-align:center; margin:0 auto; margin-top:2cm; color: rgb(50, 72, 72); }
+
+    </style>
+
+<script>
+ $(document).ready(function(){
+            console.log("hello");
+        });
+        function myFunction(){
+            $('.my_gen_number').remove();
+            let my_number = parseInt($('#my_number').val());
+            $('#number').after(`<h1 class="my_gen_number"> ${"สูตรคูณแม่ : " + my_number} </h1>`);
+            for (let i = 1; i <= 24; i++) {
+                $('#result').before(`<h3 class="my_gen_number , card-body table-responsive p-0">${my_number + " * " + i + " = " + (i) * my_number }</h3>`);
+            }
+            console.log(document.getElementById('my_number').value);
+            console.log("Click sub");
+        }
+</script>
