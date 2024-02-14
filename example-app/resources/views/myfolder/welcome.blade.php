@@ -121,7 +121,7 @@
 
     <h1 >ตารางแม่สูตรคูณ</h1>
     <input type="text" id="my_number" value="0">
-    <button onclick="myFunction()"  class="btn btn-outline-success">submit ✅</button>
+    <button onclick="myFunction()"  class="btn btn-outline-success">SUBMIT✅</button>
     <br>
     <h1 id="number"></h1>
     <h1 id="result"></h1>
