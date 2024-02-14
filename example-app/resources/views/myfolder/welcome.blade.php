@@ -140,7 +140,7 @@
             let my_number = parseInt($('#my_number').val());
             $('#number').after(`<h1 class="my_gen_number"> ${"สูตรคูณแม่ : " + my_number} </h1>`);
             for (let i = 1; i <= 24; i++) {
-                $('#result').before(`<h3 class="my_gen_number , card-body table-responsive p-0">${my_number + " * " + i + " = " + (i) * my_number }</h3>`);
+                $('#result').before(`<h3 class="my_gen_number , card-body table-responsive p-0">${my_number + " x " + i + " = " + (i) * my_number }</h3>`);
             }
             console.log(document.getElementById('my_number').value);
             console.log("Click sub");
